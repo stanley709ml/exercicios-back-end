@@ -17,7 +17,14 @@ int main(){
     equal = (side1 + side2 + side3) - (side1 * 3);
 
     if(side1 + side2 > side3 || side2 + side1 > side3 || side3 + side2 > side1 || equal == 0){
-        printf("These three sides can form a triangle.\n");
+	 printf("These sides can form an triangle\n");   
+	 if(equal == 0){
+		printf("This triangle will be an equilateral triangle.\n");
+	} else if(side1 == side2 || side1 == side3 || side2 == side3 || side2 == side1 || side3 == side1 || side3 == side1){
+		printf("This triangle will be an isosceles triangle.\n");
+	} else{
+		printf("This triangle will be an scaleno triangle.\n");
+	}
     }else{
         printf("These three sides cannot form a triangle.\n");
     }
