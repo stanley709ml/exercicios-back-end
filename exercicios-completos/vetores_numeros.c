@@ -13,11 +13,11 @@ int main(){
 		printf("[%d] ", x[j]);
 	}
 
-	printf("\nThe numbers that are multiple of ten:\n");
+	printf("\nThe numbers that are multiple of ten are found in these positions:\n");
 	
 	for(int k = 0; k < 15; k++){
 		if(x[k] % 10 == 0){
-			printf("[%d] ", x[k]);
+			printf("Position %d: [%d]\n", k, x[k]);
 		}
 	}
 
